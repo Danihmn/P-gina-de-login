@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre com sua conta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="IMG/javascript-736400_1280.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/pj2.css">
+</head>
+<body>
+    <div id="container">
+        <div id="banner">
+            <div id="formulario">
+                <h1>Seja bem-vindo</h1>
+            </div>
+        </div>
+        <div>
+            <div id="registrar">
+                <h2>Conecte-se com uma conta</h2>
+                <p>Registre-se para usufruir de todas as funcionalidades</p>
+                <div class="controleDeForma">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="nome" placeholder="Digite seu nome">
+                </div>
+                <div class="controleDeForma">
+                    <label for="email">Email</label>
+                    <input type="text" type="email" id="email" placeholder="Digite seu email">
+                </div>
+                <div class="controleDeForma">
+                    <label for="password">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha">
+                </div>
+                <p>
+                    Quer ajuda para criar uma senha? 
+                    <span id="gerarSenha">Clique aqui</span>
+                </p>
+                <div id="senhaGerada">
+                    <p>Aqui está a sua senha: </p>
+                    <h4 id="senhaFeita"></h4>
+                </div>
+                <div class="controleDeForma">
+                    <label for="confirmpassword">Confirmar senha</label>
+                    <input type="password" id="confirmpassword" placeholder="Confirme sua senha">
+                </div>
+                <p id="mensagemDeErro"></p>
+                <p id="mensagemDeEmail"></p>
+                <input type="submit" id="btnEntrar" value="Entrar">
+            </div>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="JS/pj2.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333;
+    font-family: "Montserrat", sans-serif;
+}
+
+html , body{
+    height: auto;
+    min-height: 100vh;
+}
+
+html{
+    background: linear-gradient(180deg , #8332AC 0% , #462749 100%);
+}
+
+input:focus{
+    outline: none;
+}
+
+#container{
+    max-width: 900px;
+    min-height: 80vh;
+    margin: 2rem auto;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: white;
+}
+
+#banner{
+    background: url("../IMG/pexels-pixabay-247791\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+#formulario h1{
+    color: white;
+    font-size: 3.5rem;
+    word-spacing: 50rem;
+}
+
+#registrar{
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#registrar h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+#registrar p{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+#mensagemDeErro{
+    color: red;
+    font-weight: 700;
+}
+
+.bordaMensagemErro{
+    border-bottom: 2px solid red;
+}
+
+#mensagemDeEmail{
+    color: #0466c8;
+    font-weight: 700;
+}
+
+.controleDeForma{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.controleDeForma label{
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.controleDeForma input{
+    border: none;
+    border-bottom: 3px solid #8332AC;
+    padding: 1rem 0rem;
+}
+
+#gerarSenha{
+    font-weight: bold;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#gerarSenha:hover{
+    color: #8332AC;
+}
+
+
+#registrar #senhaGerada{
+    border: 2px solid #e0aaff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.4rem;
+    text-align:center;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+#registrar #senhaGerada p{
+    color: #0466c8;
+}
+
+#registrar input[type="submit"]{
+    background-color: #8332AC;
+    opacity: 0.5;
+    border: none;
+    border-radius: 2rem;
+    align-self: flex-end;
+    cursor: pointer;
+    max-width: 300px;
+    color: #fff;
+    padding: 1rem 1.4rem;
+    transition: 0.2s;
+    margin-top: 1rem;
+}
+
+#registrar input[type="submit"]:hover{
+    opacity: 1;
+}
+
+#registrar input[type="submit"]:active{
+    background-color: #240046;
+}
+
+#senhaFeita{
+    transition: 0.2s;
+    display: inline;
+}
+
+#senhaFeita:hover{
+    color: #0466c8;
+}
